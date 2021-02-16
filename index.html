@@ -1,0 +1,193 @@
+<!DOCTYPE html  >
+<html lang="en">
+<head>
+    <title>KBN</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="name" content="hack vs hack" />
+    <meta itemprop="description" content="Cost more than your condo..." />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+</head>
+<body oncontextmenu="return false;" unselectable="on" onselectstart="return false;">
+ 	<script type="text/javascript">
+    window.onkeydown = function(evt) {
+        if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+    };
+
+    window.onkeypress = function(evt) {
+        if(evt.keyCode == 123 || evt.keyCode == 85 || evt.keyCode == 17 || evt.keyCode == 16 || evt.keyCode == 74 || evt.keyCode == 116 || evt.keyCode == 73) return false;
+    };
+	
+function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
+$(document).on("keydown", disableF5);
+</script>
+    <audio id="audio">
+        <source type="audio/mp3" src="music.mp3">
+    </audio>
+
+    <div id="main">
+        <table class="box">
+            <tbody>
+                <tr>
+                    <td><span id="line1" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line2" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line3 space" style="white-space: pre;"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="line4" style="white-space: pre;"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="marquee-container" style="visibility: hidden;">
+        <pre>|<div id="marquee"></div>|</pre>
+    </div>
+
+    <div class="background" style="display: none;">
+        <div id="pattern"></div>
+    </div>
+<style>
+a:hover {
+color: #bf360c;
+} 
+.ascii {
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 6.66s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+</style>
+    <div class="center">
+        <p class="nickname">
+        <pre><a class="ascii">
+
+██╗░░██╗██████╗░███╗░░██╗
+██║░██╔╝██╔══██╗████╗░██║
+█████═╝░██████╦╝██╔██╗██║
+██╔═██╗░██╔══██╗██║╚████║
+██║░╚██╗██████╦╝██║░╚███║
+╚═╝░░╚═╝╚═════╝░╚═╝░░╚══╝
+			</a></pre>
+        </p>
+        <div style="letter-spacing: 1; font-size: 15px;">
+            <div id="center">
+                <div class="animated fadeInDown" style="margin-bottom: 15px;"></div>
+                <div class="animated fadeInUp">
+                    <div class="icons" style="margin-bottom: 10px;">
+                        <a href="https://steamcommunity.com/id/1KBN/"="" target="_blank">
+                            <i class="fab fa-steam"></i>
+                        </a>
+                        <a href="https://discord.gg/YRPTKyn6ZV" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+                            <i class="fab fa-youtube-square"></i>
+                        </a>
+                        <a href="https://github.com/quickmocker" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </div>
+                    <div id="clockDisplay" class="clockStyle">09:44:37 PM</div>
+                    <script>
+                        function renderTime() {
+                            var currentTime = new Date();
+                            var diem = "AM";
+                            var h = currentTime.getHours();
+                            var m = currentTime.getMinutes();
+                            var s = currentTime.getSeconds();
+                            setTimeout('renderTime()', 1000);
+                            if (h == 0) {
+                                h = 12;
+                            } else if (h > 12) {
+                                h = h - 12;
+                                diem = "PM";
+                            }
+                            if (h < 10) {
+                                h = "0" + h;
+                            }
+                            if (m < 10) {
+                                m = "0" + m;
+                            }
+                            if (s < 10) {
+                                s = "0" + s;
+                            }
+                            var myClock = document.getElementById('clockDisplay');
+                            myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+                            myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+                        }
+                        renderTime();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="pp" style="cursor: pointer; letter-spacing: 2px; font-size: 14px; margin-top: 10px;" onclick="pVid();">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text"></div>
+        <div class="text1"></div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bypass.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="assets/javascript/title.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
+    <script type="text/javascript" src="assets/javascript/analytics.js"></script>
+    <script type="text/javascript">
+        var phrases = [
+            '<a href="https://steamcommunity.com/groups/" target="_BLANK">Purple</a>',
+        ];
+        var el = document.querySelector('.text');
+        var fx = new TextScramble(el);
+        var counter = 0;
+        var next = function next() {
+            fx.setText(phrases[counter]).then(function () {
+                setTimeout(next, 2000);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+        next();
+    </script>
+    <script type="text/javascript">
+        var new_phrases = [
+            '<a href=" " target="_BLANK">The Gang</a>',
+            '<a href="https://discord.gg/YRPTKyn6ZV" target="_BLANK">Discord</a>',
+        ];
+        var new_el = document.querySelector('.text1');
+        var new_fx = new TextScramble(new_el);
+        var new_counter = 0;
+        var new_next = function new_next() {
+            new_fx.setText(new_phrases[new_counter]).then(function () {
+                setTimeout(new_next, 2000);
+            });
+            new_counter = (new_counter + 1) % new_phrases.length;
+        };
+        new_next();
+    </script>
+</body>
+</html>
